@@ -1,0 +1,11 @@
+#intro{
+    background-image: url("../img/back.jpg");
+    background-size: cover; 
+    // height: max-content;
+    height:500px;
+    .overflow{       
+        width:100%;
+        height: -webkit-fill-available;
+        background-color: #00000073;     
+    }
+}

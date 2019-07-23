@@ -1,0 +1,15 @@
+@mixin space-between {
+    display:flex;
+    justify-content: space-between;    
+}
+
+@mixin space-around {
+    display:flex;
+    justify-content: space-around;    
+}
+
+@mixin responsive-icons{
+    color: $color-gray;
+    font-size: $size-icon;
+    
+}
