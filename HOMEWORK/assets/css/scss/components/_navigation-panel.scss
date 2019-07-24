@@ -1,0 +1,36 @@
+.navigation-panel{
+    display:flex;
+    .left, .right{
+        padding:4px 10px;
+        border:1px solid $color-gray;
+        margin:0 5px;
+        border-radius:5px;
+        &:hover{
+            background-color: $color-blue;
+            a{
+                color:$color-white;
+            }
+        }
+    }
+    .middle{
+        ul{
+            li{
+                display:inline-block;
+                margin:0 5px;
+                border-radius: 100%;
+                border: 1px solid $color-gray;
+                width: 25px;
+                height: 25px;
+                line-height: 27px;
+                text-align: center;
+                &:hover{
+                    background-color: $color-blue;
+                    a{
+                        color:$color-white;
+                    }
+                }
+            }
+            
+        }
+    }
+}

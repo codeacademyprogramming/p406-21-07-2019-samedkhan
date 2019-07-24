@@ -1,24 +1,9 @@
-@mixin space-between {
-    display:flex;
-    justify-content: space-between;    
-}
-
-@mixin space-around {
-    display:flex;
-    justify-content: space-around;    
-}
-
-@mixin responsive-icons{
-    color: $color-gray;
-    font-size: $size-icon;
-    
-}
-
-@mixin button {
+button{
     padding:10px 14px;
     background-color: $color-blue;
     border-radius: 5px;
     transition: ease-in 0.3s;
+    border-color: $color-blue;
     &:hover{
         background-color: #2c5cd9;
         transition: ease-in 0.3s;
@@ -36,4 +21,5 @@
             margin-right:10px;
         }
     }
-}       
+
+    }

@@ -19,17 +19,35 @@ a {
 .p-10 {
   padding: 10px 0px; }
 
+.mt-100 {
+  margin-top: 100px; }
+
+.mt-50 {
+  margin-top: 50px; }
+
+.mt-40 {
+  margin-top: 40px; }
+
+.mt-30 {
+  margin-top: 30px; }
+
+.mt-20 {
+  margin-top: 20px; }
+
+.mt-10 {
+  margin-top: 10px; }
+
 @font-face {
   font-family: 'Nunito';
-  src: url("../fonts/NunitoSans-Regular.woff");
+  src: url("../fonts/Nunito-Regular.WOFF");
   font-weight: 400; }
 @font-face {
   font-family: 'Nunito';
-  src: url("../fonts/NunitoSans-Bold.woff");
+  src: url("../fonts/Nunito-Bold.WOFF");
   font-weight: 700; }
 @font-face {
   font-family: 'Nunito';
-  src: url("../fonts/NunitoSans-Black.woff");
+  src: url("../fonts/Nunito-Black.WOFF");
   font-weight: 900; }
 @font-face {
   font-family: 'Open-Sans';
@@ -169,66 +187,250 @@ a {
 #intro {
   background-image: url("../img/back.jpg");
   background-size: cover;
-  height: 500px; }
-  #intro .overflow {
-    width: 100%;
-    height: -webkit-fill-available;
-    background-color: #00000073; }
-
-.navbar {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center; }
-  .navbar .left a {
-    color: #fff;
-    font-family: "Open-Sans";
-    font-size: 24px;
-    font-weight: 700; }
-  .navbar .middle ul {
+  background-position: center center;
+  background-repeat: no-repeat; }
+  #intro .container .row {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between; }
-    .navbar .middle ul li {
-      padding: 20px; }
-      .navbar .middle ul li a {
-        color: #7f848c;
-        font-family: "Nunito";
-        font-size: 16px;
-        font-weight: 400;
-        -webkit-transition: all 0.3s;
-        transition: all 0.3s; }
-        .navbar .middle ul li a:hover {
-          color: #fff;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    height: 100vh;
+    min-height: 900px;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center; }
+  #intro .container .section-header {
+    color: #fff; }
+    #intro .container .section-header .header-name {
+      font-size: 48px; }
+    #intro .container .section-header .header-contain {
+      font-size: 19.2px; }
+  #intro .container .section-contain {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center; }
+    #intro .container .section-contain form {
+      width: 100%;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -ms-flex-pack: distribute;
+          justify-content: space-around; }
+      #intro .container .section-contain form input, #intro .container .section-contain form select, #intro .container .section-contain form button {
+        width: 23%;
+        padding: 12px 15px;
+        border-radius: 5px;
+        color: #7f848c; }
+      #intro .container .section-contain form button a::before {
+        content: "\e986"; }
+
+#jobs {
+  border-bottom: 1px solid #7f848c; }
+
+.jobs-item-list .job-item {
+  border-bottom: 2px solid #7f848c; }
+  .jobs-item-list .job-item .job-description .job-type {
+    margin-bottom: 16px;
+    text-align: center;
+    width: 20%;
+    padding: 4px 0px;
+    border-radius: 5px;
+    font-size: 12px;
+    font-weight: 700; }
+  .jobs-item-list .job-item .job-description .freelancer {
+    background-color: #1644ba;
+    color: #fff; }
+  .jobs-item-list .job-item .job-description .fulltime {
+    background-color: #fff568; }
+  .jobs-item-list .job-item .job-description .parttime {
+    background-color: #28a745;
+    color: #fff; }
+  .jobs-item-list .job-item .job-description .job-name {
+    font-size: 19.2px;
+    line-height: 35px; }
+  .jobs-item-list .job-item .job-description .job-publisher {
+    margin-bottom: 16px; }
+    .jobs-item-list .job-item .job-description .job-publisher span {
+      color: #7f848c; }
+      .jobs-item-list .job-item .job-description .job-publisher span strong {
+        font-weight: 700;
+        color: #000; }
+  .jobs-item-list .job-item .job-location h3 {
+    font-size: 19.2px;
+    font-weight: 700;
+    line-height: 35px; }
+  .jobs-item-list .job-item .job-location span {
+    color: #7f848c; }
+  .jobs-item-list .job-item .job-salary {
+    text-align: right; }
+    .jobs-item-list .job-item .job-salary strong {
+      font-weight: 700; }
+
+.section-header {
+  color: #000;
+  text-align: center;
+  font-family: "Nunito"; }
+  .section-header .header-name {
+    font-size: 32px;
+    font-weight: 700; }
+  .section-header .header-contain {
+    font-size: 20px;
+    color: #7f848c;
+    margin: 10px 0px 30px;
+    font-weight: 400;
+    line-height: 35px; }
+
+#statistics {
+  background-image: url("../img/back.jpg");
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat; }
+  #statistics .section-header {
+    color: #fff; }
+    #statistics .section-header .header-contain {
+      color: #fff; }
+
+#navbar {
+  position: absolute;
+  z-index: 1;
+  width: 100%; }
+  #navbar .navbar {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center; }
+    #navbar .navbar .left a {
+      color: #fff;
+      font-family: "Open-Sans";
+      font-size: 24px;
+      font-weight: 700; }
+    #navbar .navbar .middle ul {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-pack: justify;
+          -ms-flex-pack: justify;
+              justify-content: space-between; }
+      #navbar .navbar .middle ul li {
+        padding: 20px; }
+        #navbar .navbar .middle ul li a {
+          color: #7f848c;
+          font-family: "Nunito";
+          font-size: 16px;
+          font-weight: 400;
           -webkit-transition: all 0.3s;
           transition: all 0.3s; }
-  .navbar .right .contactUs {
-    padding: 10px 14px;
-    background-color: #1644ba;
-    border-radius: 5px;
+          #navbar .navbar .middle ul li a:hover {
+            color: #fff;
+            -webkit-transition: all 0.3s;
+            transition: all 0.3s; }
+
+button {
+  padding: 10px 14px;
+  background-color: #1644ba;
+  border-radius: 5px;
+  -webkit-transition: ease-in 0.3s;
+  transition: ease-in 0.3s;
+  border-color: #1644ba; }
+  button:hover {
+    background-color: #2c5cd9;
     -webkit-transition: ease-in 0.3s;
     transition: ease-in 0.3s; }
-    .navbar .right .contactUs:hover {
-      background-color: #2c5cd9;
-      -webkit-transition: ease-in 0.3s;
-      transition: ease-in 0.3s; }
-    .navbar .right .contactUs a {
-      color: #fff;
-      font-family: "Nunito";
+  button a {
+    color: #fff;
+    font-family: "Nunito";
+    font-size: 16px;
+    font-weight: 400; }
+    button a::before {
+      content: "\ea95";
+      font-family: 'icomoon';
       font-size: 16px;
-      font-weight: 400; }
-      .navbar .right .contactUs a::before {
-        content: "\ea95";
-        font-family: 'icomoon';
-        font-size: 16px;
-        color: white;
-        margin-right: 10px; }
+      color: white;
+      margin-right: 10px; }
+
+.overflow-black {
+  background-color: #00000073; }
+
+.overflow-blue {
+  background-color: #1644bad9; }
+
+.statistics-item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1; }
+  .statistics-item div {
+    width: 100%;
+    text-align: center; }
+  .statistics-item .item-header {
+    color: #fff;
+    font-size: 51.2px;
+    font-weight: 700;
+    line-height: 100px; }
+  .statistics-item .item-contain {
+    color: rgba(255, 255, 255, 0.7); }
+
+.navigation-panel {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex; }
+  .navigation-panel .left, .navigation-panel .right {
+    padding: 4px 10px;
+    border: 1px solid #7f848c;
+    margin: 0 5px;
+    border-radius: 5px; }
+    .navigation-panel .left:hover, .navigation-panel .right:hover {
+      background-color: #1644ba; }
+      .navigation-panel .left:hover a, .navigation-panel .right:hover a {
+        color: #fff; }
+  .navigation-panel .middle ul li {
+    display: inline-block;
+    margin: 0 5px;
+    border-radius: 100%;
+    border: 1px solid #7f848c;
+    width: 25px;
+    height: 25px;
+    line-height: 27px;
+    text-align: center; }
+    .navigation-panel .middle ul li:hover {
+      background-color: #1644ba; }
+      .navigation-panel .middle ul li:hover a {
+        color: #fff; }
+
+.candidates-item-list .candidates-item {
+  height: 100px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center; }
+  .candidates-item-list .candidates-item .max-width-100 {
+    max-width: 100px; }
+  .candidates-item-list .candidates-item .max-width-120 {
+    max-width: 120px; }
+  .candidates-item-list .candidates-item .max-width-150 {
+    max-width: 150px; }
+  .candidates-item-list .candidates-item .max-width-200 {
+    max-width: 200px; }
+
+* {
+  font-family: "Nunito"; }
 
 /*# sourceMappingURL=main.css.map */

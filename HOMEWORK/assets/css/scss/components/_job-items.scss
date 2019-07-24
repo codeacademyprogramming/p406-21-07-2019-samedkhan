@@ -1,0 +1,66 @@
+#jobs{
+    border-bottom: 1px solid $color-gray;
+}
+.jobs-item-list{
+    
+    .job-item{
+        border-bottom: 2px solid $color-gray;
+
+        .job-description{
+            .job-type{
+                margin-bottom:16px;
+                text-align: center;
+                width:20%;
+                padding:4px 0px;
+                border-radius: 5px;
+                font-size:12px;
+                font-weight: $weight-Bold;
+            }
+            .freelancer{
+                background-color: $color-blue;
+                color:$color-white;
+            }
+            .fulltime{
+                background-color: $color-yellow;                
+            }
+            .parttime{
+                background-color: $color-green;
+                color:$color-white;
+            }
+            .job-name{
+                font-size: $size-h3;
+                line-height: 35px;
+            }
+            .job-publisher{
+                margin-bottom:16px;
+                span{
+                    color:$color-gray;
+                    strong{
+                        font-weight: $weight-Bold;
+                        color: $color-black;
+                    }
+
+                }
+                
+            }
+        }
+        .job-location{
+            
+            h3{
+                font-size: $size-h3;
+                font-weight: $weight-Bold;
+                line-height: 35px;
+            }
+            span{
+                color:$color-gray;
+            }
+        }
+        .job-salary{
+            text-align: right;
+            strong{
+                
+                font-weight: $weight-Bold;
+            }
+        }
+    }
+}

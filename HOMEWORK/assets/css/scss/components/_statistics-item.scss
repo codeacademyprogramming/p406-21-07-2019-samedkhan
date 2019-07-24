@@ -1,0 +1,19 @@
+.statistics-item{
+    display: flex;
+    flex-wrap: wrap;
+    flex-grow: 1;
+
+    div{
+        width:100%;
+        text-align: center;        
+    }
+    .item-header{
+        color:$color-white;
+        font-size: $size-statisticsNumber;
+        font-weight: $weight-Bold;
+        line-height: 100px;
+    }
+    .item-contain{
+        color:$color-lightgray;
+    }
+}

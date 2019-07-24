@@ -1,0 +1,17 @@
+.section-header{
+    color: $color-black;
+    text-align: center;
+    font-family: $font-regular;
+    
+    .header-name{
+        font-size: $size-sectHeaderH2;
+        font-weight: $weight-Bold;
+    }
+    .header-contain{
+        font-size: $size-sectHeaderP;
+        color:$color-gray;
+        margin: 10px 0px 30px;
+        font-weight: $weight-Normal;
+        line-height: 35px;
+    }
+}
